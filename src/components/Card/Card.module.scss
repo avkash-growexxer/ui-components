@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss" as *;
+
+.card {
+  border-radius: $border-radius;
+  overflow: hidden;
+  font-family: $font-family-base;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.default {
+  border: 1px solid $color-border;
+}
+
+.outlined {
+  border: 1px solid $color-primary;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: $spacing-md;
+  background-color: $color-header-bg;
+  font-weight: $font-weight-bold;
+  border-bottom: 1px solid $color-border;
+}
+
+.body {
+  padding: $spacing-md;
+  flex: 1;
+}
+
+.footer {
+  padding: $spacing-md;
+  background-color: $color-footer-bg;
+  border-top: 1px solid $color-border;
+  text-align: right;
+}

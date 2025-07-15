@@ -1,0 +1,12 @@
+body.sb-show-main.sb-main-padded{
+    height: 100vh;
+    padding: 0;
+}
+body,body *{
+    box-sizing: border-box;
+}
+
+#storybook-root{
+    height: 100vh;
+    padding: 1rem;
+}

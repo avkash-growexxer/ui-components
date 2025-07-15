@@ -1,0 +1,35 @@
+@use "../../styles/variables.scss" as *;
+
+.accordion {
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  overflow: hidden;
+  font-family: $font-family-base;
+}
+
+.item + .item {
+  border-top: 1px solid $color-border;
+}
+
+.header {
+  width: 100%;
+  background-color: $color-light;
+  border: none;
+  padding: $spacing-md;
+  text-align: left;
+  font-weight: $font-weight-bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  padding: $spacing-md;
+  background-color: $color-white;
+}
+
+.icon {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
